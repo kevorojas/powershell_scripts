@@ -1,5 +1,5 @@
 
-$commonPrograms = @('googleChrome', 'lightshot', '7zip', 'zoom', 'bitwarden', 'openvpn')
+$commonPrograms = @('googleChrome', 'lightshot', '7zip', 'zoom', 'bitwarden', 'openvpn','firefox')
 $advancedPrograms = @('git', 'notepadplusplus', 'sql-server-management-studio','nodejs','visualstudio2019community','fiddler','netfx-4.8-devpack')
 
 function Install-programs{
@@ -19,5 +19,9 @@ if (!(Get-Command choco)){ #Check if Chocolatey is installed
 }
 
 foreach ($program in $commonPrograms) {
+    Install-programs ($program)
+}
+
+foreach ($program in $advancedPrograms) {
     Install-programs ($program)
 }
