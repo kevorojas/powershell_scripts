@@ -1,6 +1,6 @@
 
-$commonPrograms = @('googleChrome', 'lightshot', '7zip', 'zoom', 'bitwarden', 'openvpn','firefox')
-$advancedPrograms = @('git', 'notepadplusplus', 'sql-server-management-studio','nodejs','visualstudio2019community','fiddler','netfx-4.8-devpack')
+$commonPrograms = @('googleChrome', 'lightshot', '7zip','firefox')
+$advancedPrograms = @('git', 'notepadplusplus','docker-desktop','minikube','kubernetes-cli','kubernetes-helm','obs-studio','vscode')
 
 function Install-programs{
     param ($program)
